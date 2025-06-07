@@ -1138,6 +1138,24 @@ body {
   }
 }
 
+/* Add this to your existing CSS */
+.smaller-text {
+  font-size: clamp(1rem, 4vw, 1.8rem) !important;
+  letter-spacing: 0.5vw !important;
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    font-size: clamp(0.8rem, 3.5vw, 1.2rem) !important;
+    letter-spacing: 0.3vw !important;
+  }
+}
+
+/* Modify your existing title class */
+.title {
+  /* Keep your existing properties */
+  font-size: clamp(1rem, 4vw, 2rem); /* Adjusted base size */
+}
+
 @keyframes leaf-ans-1 {
 
   0%,
